@@ -1,4 +1,4 @@
-# {{ ansible_managed }}
+{{ ansible_managed | ansible.builtin.comment }}
 # Service enabled: {{ sssd_service_enabled | default('yes') }}
 [Unit]
 Description=System Security Services Daemon
