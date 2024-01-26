@@ -1,4 +1,4 @@
-# {{ ansible_managed }}
+{{ ansible_managed | ansible.builtin.comment }}
 
 sssd_build_options: {{ sssd_build_options | hash('sha1') }}
 sssd_download_url: {{ sssd_download_url | hash('sha1') }}
